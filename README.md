@@ -8,10 +8,23 @@ En snabbstart f\u00f6r att bygga statiska webbplatser med [Astro](https://astro.
 src/
   pages/
     index.astro
+    kontakt.astro
+    karriar.astro
+    om-oss.astro
+    referenser.astro
+    blogg/
+      index.astro
+    tjanster/
+      index.astro
+      forvaltning.astro
+      fastighetsservice.astro
+      proptech.astro
   components/
     Hero.astro
     Services.astro
     Contact.astro
+    Header.astro
+    Footer.astro
   layouts/
     BaseLayout.astro
 ```
@@ -34,8 +47,8 @@ Projektet kan enkelt deployas till Netlify eller Vercel:
 
 ## CMS-integration
 
-Index-sidan anv\u00e4nder `await fetch()` f\u00f6r att h\u00e4mta tj\u00e4nstedata. Byt ut URL:en mot ditt headless CMS (t.ex. Sanity, Contentful) f\u00f6r att hantera inneh\u00e5llet dynamiskt.
+Index-sidan använder `await fetch()` för att hämta tjänstedata. Byt ut URL:en mot ditt headless CMS (t.ex. Sanity, Contentful) för att hantera innehållet dynamiskt. Samma mönster kan användas på övriga sidor.
 
 ## Nytt projekt
 
-Kopiera hela denna mappstruktur till en ny kund och uppdatera inneh\u00e5llet. Boilerplaten \u00e4r avskalad f\u00f6r snabb start och kan enkelt anpassas.
+Kopiera hela denna mappstruktur till en ny kund och uppdatera innehållet. Boilerplaten är avskalad för snabb start och kan enkelt anpassas. Menyn definieras i `Header.astro` och kan enkelt ändras beroende på vilka sidor som ska visas.
