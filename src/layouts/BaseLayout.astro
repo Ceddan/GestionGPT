@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 <!DOCTYPE html>
 <html lang="sv">
@@ -9,6 +11,10 @@
     <slot name="head" />
   </head>
   <body class="min-h-screen flex flex-col">
-    <slot />
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
