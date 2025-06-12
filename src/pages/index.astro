@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Contact from '../components/Contact.astro';
+
+let services = [];
+try {
+  const res = await fetch('https://example.com/api/services.json');
+  if (res.ok) services = await res.json();
+} catch (e) {
+  services = [
+    { title: 'Fastighetsservice', description: 'Sk\u00f6tsel och underh\u00e5ll' },
+    { title: 'F\u00f6rvaltning', description: 'Ekonomi och administration' },
+    { title: 'Proptech', description: 'Digitala l\u00f6sningar' }
+  ];
+}
+---
+<BaseLayout>
+  <Fragment slot="head">
+    <title>Fastighetsservice & Proptech</title>
+  </Fragment>
+  <Hero title="Fastighetsservice i toppklass" subtitle="Din partner inom fastighetsf\u00f6rvaltning" cta="Kontakta oss" />
+  <Services services={services} />
+  <Contact />
+</BaseLayout>
