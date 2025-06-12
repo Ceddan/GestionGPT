@@ -1,3 +1,4 @@
+acodex/skapa-astro-baserad-boilerplate-för-fastighetsservice
 # Fastighetsservice Boilerplate
 
 En snabbstart f\u00f6r att bygga statiska webbplatser med [Astro](https://astro.build/) och Tailwind CSS. Fokuserad p\u00e5 fastighetsservice, f\u00f6rvaltning och proptech.
@@ -56,3 +57,6 @@ Index-sidan använder `await fetch()` för att hämta tjänstedata. Byt ut URL:e
 ## Nytt projekt
 
 Kopiera hela denna mappstruktur till en ny kund och uppdatera innehållet. Boilerplaten är avskalad för snabb start och kan enkelt anpassas. Menyn definieras i `Header.astro` och kan enkelt ändras beroende på vilka sidor som ska visas.
+=======
+s
+main
